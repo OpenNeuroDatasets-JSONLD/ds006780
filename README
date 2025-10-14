@@ -1,7 +1,7 @@
-﻿# SFARI_EEG multi-paradigm dataset (Raw)
+# SFARI_EEG multi-paradigm dataset (Raw)
 
 ## Overview
-This dataset provides raw EEG from children recorded across seven complementary paradigms designed to assay neuro-oscillatory function spanning basic sensory through cognitive control and motor systems. Data are organized in BIDS 1.10.1 format (Dataset Type: raw), with each paradigm in its own BIDS-valid subfolder including a task-specific README/task-*_bold.json-style description (EEG sidecars).
+This dataset provides raw EEG from children recorded across seven complementary paradigms designed to assay neuro-oscillatory function spanning basic sensory through cognitive control and motor systems. This dataset contains data for three groups of children: 44 typically developing (TD), 66 autism spectrum disorder (ASD), and 28 sibling of individuals with ASD (SIB) participants, all between 8 and 13 years of age. Data are organized in BIDS 1.10.1 format (Dataset Type: raw), with each paradigm in its own BIDS-valid subfolder including a task-specific README/task-*_bold.json-style description (EEG sidecars).
 
 The scientific motivation is to enable robust, large-sample mapping of oscillatory dysfunction in autism spectrum disorder (ASD) across the major frequency bands (theta, alpha, beta, gamma) using a common acquisition platform and harmonized annotations. By sampling multiple assays within the same participants, these data support both targeted hypothesis-driven analyses and data-driven discovery (e.g., network/feature selection approaches for biomarker development and predictive modeling of dimensional traits relevant to social cognition and motor function).
 
