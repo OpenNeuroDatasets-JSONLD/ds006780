@@ -1,0 +1,14 @@
+{
+  "Name": "SFARI_EEG multi-paradigm dataset (BIDS)",
+  "BIDSVersion": "1.9.0",
+  "DatasetType": "raw",
+  "License": "CC0",
+  "Authors": [
+    "Sophie Molholm, Theo Vanneau, John J. Foxe"
+  ],
+  "HowToAcknowledge": "Please cite the paper in relation with the data you are working with",
+  "Funding": [
+    "This work was supported by a grant from the Simons Foundation Autism Research Initiative (SFARI Award # 874845, SM).  Support for recruitment and phenotyping of participants was provided by the Human Clinical Phenotyping Core of the NICHD funded Rose. F. Kennedy Intellectual and Developmental Disabilities Research Center (P50  HD105352, SM)"
+  ],
+  "ReferencesAndLinks": []
+}

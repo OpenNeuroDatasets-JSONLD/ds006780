@@ -1,0 +1,17 @@
+﻿onset	duration	trial_type	value	sample
+11.04296875	0.0	fixation_cross	1	5654
+11.654296875	0.0	button_press	2	5967
+18.0	0.0	button_press	2	9216
+18.009765625	0.0	fixation_cross	1	9221
+18.58984375	0.0	button_press	2	9518
+21.57421875	0.0	fixation_cross	1	11046
+22.701171875	0.0	button_press	2	11623
+23.8515625	0.0	button_press	2	12212
+23.857421875	0.0	fixation_cross	1	12215
+24.392578125	0.0	button_press	2	12489
+27.28125	0.0	button_press	2	13968
+27.291015625	0.0	fixation_cross	1	13973
+27.662109375	0.0	button_press	2	14163
+31.796875	0.0	button_press	2	16280
+31.806640625	0.0	fixation_cross	1	16285
+32.501953125	0.0	button_press	2	16641

@@ -1,0 +1,12 @@
+filename	task	run	session	size_bytes	acq_time	notes
+eeg/sub-10787_task-ASSR_run-01_eeg.bdf	ASSR	01	n/a	54064640	n/a	n/a
+eeg/sub-10787_task-AVSRT_run-01_eeg.bdf	AVSRT	01	n/a	96224768	n/a	n/a
+eeg/sub-10787_task-Beepflash_run-01_eeg.bdf	Beepflash	01	n/a	140963840	n/a	n/a
+eeg/sub-10787_task-FAST_run-01_eeg.bdf	FAST	01	n/a	103064576	n/a	n/a
+eeg/sub-10787_task-IC_run-01_eeg.bdf	IC	01	n/a	89945600	n/a	n/a
+eeg/sub-10787_task-Restingstate_run-01_eeg.bdf	Restingstate	01	n/a	7083008	n/a	n/a
+eeg/sub-10787_task-Restingstate_run-02_eeg.bdf	Restingstate	02	n/a	7083008	n/a	n/a
+eeg/sub-10787_task-Restingstate_run-03_eeg.bdf	Restingstate	03	n/a	7083008	n/a	n/a
+eeg/sub-10787_task-Restingstate_run-04_eeg.bdf	Restingstate	04	n/a	6970880	n/a	n/a
+eeg/sub-10787_task-Restingstate_run-05_eeg.bdf	Restingstate	05	n/a	7083008	n/a	n/a
+eeg/sub-10787_task-Restingstate_run-06_eeg.bdf	Restingstate	06	n/a	7083008	n/a	n/a

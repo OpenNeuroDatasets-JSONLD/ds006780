@@ -1,0 +1,17 @@
+filename	task	run	session	size_bytes	acq_time	notes
+eeg/sub-1558_task-ASSR_run-01_eeg.bdf	ASSR	01	n/a	53840384	n/a	n/a
+eeg/sub-1558_task-AVSRT_run-01_eeg.bdf	AVSRT	01	n/a	98691584	n/a	n/a
+eeg/sub-1558_task-Beepflash_run-01_eeg.bdf	Beepflash	01	n/a	35227136	n/a	n/a
+eeg/sub-1558_task-Beepflash_run-02_eeg.bdf	Beepflash	02	n/a	108783104	n/a	n/a
+eeg/sub-1558_task-FAST_run-01_eeg.bdf	FAST	01	n/a	102503936	n/a	n/a
+eeg/sub-1558_task-IC_run-01_eeg.bdf	IC	01	n/a	90394112	n/a	n/a
+eeg/sub-1558_task-motor_run-01_eeg.vhdr	motor	01	n/a	1913	n/a	n/a
+eeg/sub-1558_task-motor_run-02_eeg.vhdr	motor	02	n/a	1913	n/a	n/a
+eeg/sub-1558_task-motor_run-03_eeg.vhdr	motor	03	n/a	1913	n/a	n/a
+eeg/sub-1558_task-motor_run-04_eeg.vhdr	motor	04	n/a	1913	n/a	n/a
+eeg/sub-1558_task-motor_run-05_eeg.vhdr	motor	05	n/a	1913	n/a	n/a
+eeg/sub-1558_task-motor_run-06_eeg.vhdr	motor	06	n/a	1913	n/a	n/a
+eeg/sub-1558_task-motor_run-07_eeg.vhdr	motor	07	n/a	1913	n/a	n/a
+eeg/sub-1558_task-motor_run-08_eeg.vhdr	motor	08	n/a	1913	n/a	n/a
+eeg/sub-1558_task-motor_run-09_eeg.vhdr	motor	09	n/a	1913	n/a	n/a
+eeg/sub-1558_task-motor_run-10_eeg.vhdr	motor	10	n/a	1913	n/a	n/a
