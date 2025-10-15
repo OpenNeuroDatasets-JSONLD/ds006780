@@ -96,6 +96,23 @@ Events:
 - Onsets are stimulus onsets derived from the Status channel.
 - See each `*_events.tsv` for per-run details.
 
+## Cross-sensory attentional switching task (Beep-Flash_run)
+
+EEG recorded during a cross-sensory attentional task (Beep-Flash) in children.
+
+- Participants were seated in a chair in an electrically shielded room (International Acoustics Company, Bronx, New York), 70 cm away from the visual display (Dell UltraSharp 1704FPT). A cued intersensory attention task was employed in which each trial consisted of an instructional cue (S1), an intervening preparatory period (cue-target window), followed by a task-relevant second stimulus (S2). 
+Participants were directed only to respond to targets within the cued sensory modality (auditory or visual) and to 
+ignore any stimuli in the uncued sensory modality. Visual stimuli were presented on a gray background. The cue stimulus consisted of a simple gray line drawing depicting either a pair of headphones or a computer monitor. These cue stimuli instructed the participant which sensory modality (auditory or visual) to attend. The S2 stimuli were either a unisensory stimulus in the cued modality or a compound bisensory auditory–visual stimulus. For both cue conditions, the likelihood of receiving either a unisensory or a bisensory S2 was 50%. Participants performed a go/no-go detection task on the S2 within the cued modality, responding with a button click on a computer mouse using the index finger of the right hand. Participants were cued pseudo-randomly on a trial-by-trial basis to attend to either the visual or auditory components of the upcoming S2 event. The likelihood of a task switch or repeat (i.e. attend to the 
+same modality as the previous trial or switch to the other modality) was manipulated such that the probability of a given trial 
+being a repeat rather than a switch trial was 70%.The auditory S2 stimulus consisted of two sequentially presented sinusoidal tones (100-ms duration; 60-dB of sound pressure level; 10-ms rise/fall) with a 5-ms interval between presentations. On non-target trials, the two tones were of identical frequency and participants were asked to withhold responses when no difference between the tones was detected. On target trials, the two tones presented were of different frequency. One of the two tones was 2,000 Hz, whereas the frequency of the other tone was psychophysically titrated based on each participant's performance using a staircase procedure administered prior to the main task. When participants detected a frequency difference between the pair of tones, they were instructed to respond with a fast, accurate button push. The visual S2 stimulus consisted of a pair of Gabor patches (100-ms duration) centered to the left and right of the fixation cross. On target and non-target trials the two Gabors were of different and identical orientation, respectively. As with the auditory stimuli, the orientation difference between the Gabors was psychophysically titrated for each participant (see Procedure below), and participants were instructed to respond to targets with a button push. The likelihood of receiving a target stimulus within the cued sensory modality was set at 20%.The inter-stimulus interval between the cue offset and S2 onset (i.e. the Cue–S2 period) was fixed at 975 ms. A black fixation cross was presented in the center of the monitor throughout testing. The inter-trial interval (i.e. the S2–Cue period) was fixed at 1,491 ms, during which the fixation cross remained on the screen.
+
+Events:
+-Onsets are stimulus onsets derived from the Status channel.
+- See each `*_events.tsv` for per-run details.
+
+Note:
+- Please cite: in preparation
+
 ## Rest (Restingstate_run)
 
 EEG recorded during Resting-state (RS) in children.
