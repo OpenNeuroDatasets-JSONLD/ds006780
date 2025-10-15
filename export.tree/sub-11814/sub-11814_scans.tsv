@@ -1,6 +1,0 @@
-filename	task	run	session	size_bytes	acq_time	notes
-eeg/sub-11814_task-Beepflash_run-01_eeg.bdf	Beepflash	01	n/a	157222400	n/a	n/a
-eeg/sub-11814_task-FAST_run-01_eeg.bdf	FAST	01	n/a	103288832	n/a	n/a
-eeg/sub-11814_task-Restingstate_run-01_eeg.bdf	Restingstate	01	n/a	7083008	n/a	n/a
-eeg/sub-11814_task-Restingstate_run-02_eeg.bdf	Restingstate	02	n/a	7083008	n/a	n/a
-eeg/sub-11814_task-Restingstate_run-03_eeg.bdf	Restingstate	03	n/a	7083008	n/a	n/a

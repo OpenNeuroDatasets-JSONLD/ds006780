@@ -1,5 +1,0 @@
-filename	task	run	session	size_bytes	acq_time	notes
-eeg/sub-11562_task-ASSR_run-01_eeg.bdf	ASSR	01	n/a	53728256	n/a	n/a
-eeg/sub-11562_task-FAST_run-01_eeg.bdf	FAST	01	n/a	25584128	n/a	n/a
-eeg/sub-11562_task-IC_run-01_eeg.bdf	IC	01	n/a	71444480	n/a	n/a
-eeg/sub-11562_task-Restingstate_run-01_eeg.bdf	Restingstate	01	n/a	7083008	n/a	n/a
