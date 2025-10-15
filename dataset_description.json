@@ -13,5 +13,6 @@
     "ReferencesAndLinks": [],
     "EthicsApprovals": [
         "All procedures were approved by the Institutional Review Board of the Albert Einstein College of Medicine and adhered to tenets for human subjects’ research laid out in the Declaration of Helsinki. All participants assented to the procedures and parents/guardians provided informed consent (IRB#: 2021-13433)"
-    ]
+    ],
+    "DatasetDOI": "doi:10.18112/openneuro.ds006780.v1.0.0"
 }
