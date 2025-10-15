@@ -1,49 +1,9 @@
 # SFARI_EEG multi-paradigm dataset (Raw)
 
 ## Overview
-This dataset provides raw EEG from children recorded across seven complementary paradigms designed to assay neuro-oscillatory function spanning basic sensory through cognitive control and motor systems. This dataset contains data for three groups of children: 44 typically developing (TD), 66 autism spectrum disorder (ASD), and 28 sibling of individuals with ASD (SIB) participants, all between 8 and 13 years of age. Data are organized in BIDS 1.10.1 format (Dataset Type: raw), with each paradigm in its own BIDS-valid subfolder including a task-specific README/task-*_bold.json-style description (EEG sidecars).
+This dataset provides raw EEG from children recorded across seven complementary paradigms designed to assay neuro-oscillatory function spanning basic sensory through cognitive control and motor systems. This dataset contains data for three groups of children: 44 typically developing (TD), 66 autism spectrum disorder (ASD), and 28 sibling of individuals with ASD (SIB) participants, all between 8 and 13 years of age. Data are organized in BIDS 1.10.1 format (Dataset Type: raw).
 
 The scientific motivation is to enable robust, large-sample mapping of oscillatory dysfunction in autism spectrum disorder (ASD) across the major frequency bands (theta, alpha, beta, gamma) using a common acquisition platform and harmonized annotations. By sampling multiple assays within the same participants, these data support both targeted hypothesis-driven analyses and data-driven discovery (e.g., network/feature selection approaches for biomarker development and predictive modeling of dimensional traits relevant to social cognition and motor function).
-
-## Description of the tasks
-
-Auditory Steady-State Response (ASSR_run)
-## Overview
-EEG recorded during an Auditory Steady-State Response (ASSR) in children.
-## Description of the task
-- Participants were seated in a chair in an electrically shielded room (International Acoustics Company, Bronx, New York), 70 cm away from the visual display (Dell UltraSharp 1704FPT). Auditory stimuli were 500-ms binaural click trains at either 27- or 40-Hz, presented through HD 650 Sennheiser headphones at 60 dB SPL. Inter-stimulus interval was randomly jittered between 488-788 ms. On 15% of trials, an oddball stimulus presented at a different frequency (27-Hz for 40-Hz trials, 40-Hz for 27-Hz trials) was randomly intermixed among the standards. Participants were instructed to respond via button-press when they identified an oddball stimulus, to promote attention to the auditory stimuli. Stimuli were presented in four randomly presented blocks of 100 trials—blocked by stimulus type (40-Hz standard, 27-Hz standard), consisting of 170 trials per standard frequency and 30 trials per oddball stimulus. 
-## Events
-- Codes: '27_Hz_Standard': 21, '40_Hz_Oddball': 12, '40_Hz_Standard': 11, '27_Hz_Oddball': 22, 'Block_27_Hz_Standard': 27,
-  'Block_40_Hz_Standard': 40, 'Half_Block_Pause': 199, 'Response_button':1}
-- Onsets are stimulus onsets derived from the Status channel.
-- See each `*_events.tsv` for per-run details.
-## Notes
-- Please cite: <Testing the auditory steady-state response (ASSR) to 40-Hz and 27-Hz click trains in children with autism spectrum disorder and their first-degree biological relatives: A high-density electroencephalographic (EEG) study/https://doi.org/10.1101/2025.08.05.668742>
-
-Illusory Contours (IC_run)
-Kanizsa illusory-contour stimuli versus controls presented during central fixation. Primary measures: induced/evoked gamma (and beta) modulations indexing contour binding processes.
-
-Face Processing (FAST_run)
-## Overview
-EEG recorded during a social attentional task (FAST) in children.
-## Description of the task
-- Participants were seated in a chair in an electrically shielded room (International Acoustics Company, Bronx, New York), 70 cm away from the visual display (Dell UltraSharp 1704FPT). The stimuli, controlled by Presentation software (Neurobehavioral Systems), were faces ('Social') or objects (‘Non-Social’), each shown as upright and inverted images, along with shadow versions. Participants were instructed to press a button as quickly as possible upon detecting a shadow stimulus (presented at 20% probability). A jittered interstimulus interval (900–1100ms) reduced onset predictability. The task comprised 720 trials across 12 blocks (60 trials/block, ~3 minutes and 40 seconds each). Blocks were organized by stimulus category; each block contained only social stimuli (i.e., upright and inverted faces with their shadow versions) or non-social stimuli. There were six blocks of social and six blocks of non-social in total). Face and object images (upright/inverted) were randomly chosen from a pool of 28 stimuli. All faces depicted a positive emotion, (i.e., smiling faces; see the github folder for stimuli). Shadow faces and objects were chosen across a reduced pool of 5 stimuli. Responses were recorded using a response pad (Logitech Wingman Precision Gamepad), and stimulus and response triggers were sent from the PC acquisition computer via Presentation software.
-## Events
-- Codes: Face_upright=21, Face_inverted=22, Face_upright_shadow=121, Face_inverted_shadow=122, Object_upright=31, Object_inverted=32, Object_upright_shadow=131, Object_inverted_shadow=132
-- Onsets are stimulus onsets derived from the Status channel.
-- See each `*_events.tsv` for per-run details.
-
-Intersensory Attention (Beepflash_run)
-Cued S1→S2 design indicating whether to attend visual or auditory targets. Primary measures: posterior alpha increases indexing suppression of task-irrelevant sensory input and intersensory attentional gating.
-
-Audiovisual simple reaction time task (AVSRT_run) 
-Speeded motor responses to auditory/visual/multisensory targets. Primary measures: beta-band motor dynamics and multisensory response facilitation.
-
-Motor Processing (Motor_run) – Treadmill Walking (grouped as part of the Motor paradigm)
-Overground-like treadmill walking with conditions that vary gait/postural demand (optical flow and no-flow); desynchronization expected over supplementary motor/posterior parietal regions. Primary measures: alpha/beta ERD during locomotion and demand-related modulation.
-
-Rest (Restingstate_run)
-Short eyes-open resting segments (central fixation) interleaved between tasks. Primary measures: band-limited power across theta/alpha/beta/gamma; supports comparison of passive vs. task-evoked oscillatory markers.
 
 ## Acquisition
 - System: BioSemi ActiveTwo, 64 channels (BioSemi64 montage)
@@ -56,14 +16,96 @@ Short eyes-open resting segments (central fixation) interleaved between tasks. P
 
 - See `participants.tsv` and `participants.json` in each specific paradigm for more details.
 
-## Intended use / analyses
-Enables frequency-specific assays (theta/alpha/beta/gamma) across harmonized sensory, multisensory, cognitive control, motor, and rest conditions within subjects.
-Supports cross-paradigm comparisons and predictive modeling (e.g., feature selection/network analyses) against dimensional clinical/behavioral measures relevant to social and motor function.
-Designed for both hypothesis-driven replication (e.g., aSSR gamma reductions; alpha-gated suppression; beta ERD with movement) and data-driven discovery of candidate biomarkers.
-
 ## Data quality & preprocessing notes
-Raw EEG is provided without preprocessing. Typical pipelines include: band-stop at 60 Hz (and harmonics) as needed, band-pass per analysis, artifact rejection (e.g., ICA + automated methods), re-referencing, epoching aligned to _events.tsv, and spectral/TF decomposition (e.g., aSSR metrics, induced ERD/ERS, ITPC).
-Paradigm folders document task-specific event coding and any stimulus timing nuances.
+Raw EEG is provided without preprocessing. 
 
 ## Notes
 - This work was supported by a grant from the Simons Foundation Autism Research Initiative (SFARI Award # 874845, SM).  Support for recruitment and phenotyping of participants was provided by the Human Clinical Phenotyping Core of the NICHD funded Rose. F. Kennedy Intellectual and Developmental Disabilities Research Center (P50  HD105352, SM)
+
+# Description of the tasks
+
+## Auditory Steady-State Response (ASSR_run)
+ 
+EEG recorded during an Auditory Steady-State Response (ASSR) in children.
+
+- Participants were seated in a chair in an electrically shielded room (International Acoustics Company, Bronx, New York), 70 cm away from the visual display (Dell UltraSharp 1704FPT). Auditory stimuli were 500-ms binaural click trains at either 27- or 40-Hz, presented through HD 650 Sennheiser headphones at 60 dB SPL. Inter-stimulus interval was randomly jittered between 488-788 ms. On 15% of trials, an oddball stimulus presented at a different frequency (27-Hz for 40-Hz trials, 40-Hz for 27-Hz trials) was randomly intermixed among the standards. Participants were instructed to respond via button-press when they identified an oddball stimulus, to promote attention to the auditory stimuli. Stimuli were presented in four randomly presented blocks of 100 trials—blocked by stimulus type (40-Hz standard, 27-Hz standard), consisting of 170 trials per standard frequency and 30 trials per oddball stimulus. 
+
+ Events:
+- Codes: '27_Hz_Standard': 21, '40_Hz_Oddball': 12, '40_Hz_Standard': 11, '27_Hz_Oddball': 22, 'Block_27_Hz_Standard': 27,
+  'Block_40_Hz_Standard': 40, 'Half_Block_Pause': 199, 'Response_button':1}
+- Onsets are stimulus onsets derived from the Status channel.
+- See each `*_events.tsv` for per-run details.
+
+Notes:
+- Please cite: <Testing the auditory steady-state response (ASSR) to 40-Hz and 27-Hz click trains in children with autism spectrum disorder and their first-degree biological relatives: A high-density electroencephalographic (EEG) study/https://doi.org/10.1101/2025.08.05.668742>
+
+## Illusory Contours (IC_run)
+
+Kanizsa illusory-contour stimuli versus controls presented during central fixation. 
+
+- Participants were seated in a chair in an electrically shielded room (International Acoustics Company, Bronx, New York), 70 cm away from the visual display (Dell UltraSharp 1704FPT).
+
+Events:
+- 
+- Onsets are stimulus onsets derived from the Status channel.
+- See each `*_events.tsv` for per-run details.
+
+Note:
+- Please cite: in preparation
+
+## Face Processing (FAST_run)
+ 
+EEG recorded during a social attentional task (FAST) in children.
+
+- Participants were seated in a chair in an electrically shielded room (International Acoustics Company, Bronx, New York), 70 cm away from the visual display (Dell UltraSharp 1704FPT). The stimuli, controlled by Presentation software (Neurobehavioral Systems), were faces ('Social') or objects (‘Non-Social’), each shown as upright and inverted images, along with shadow versions. Participants were instructed to press a button as quickly as possible upon detecting a shadow stimulus (presented at 20% probability). A jittered interstimulus interval (900–1100ms) reduced onset predictability. The task comprised 720 trials across 12 blocks (60 trials/block, ~3 minutes and 40 seconds each). Blocks were organized by stimulus category; each block contained only social stimuli (i.e., upright and inverted faces with their shadow versions) or non-social stimuli. There were six blocks of social and six blocks of non-social in total). Face and object images (upright/inverted) were randomly chosen from a pool of 28 stimuli. All faces depicted a positive emotion, (i.e., smiling faces; see the github folder for stimuli). Shadow faces and objects were chosen across a reduced pool of 5 stimuli. Responses were recorded using a response pad (Logitech Wingman Precision Gamepad), and stimulus and response triggers were sent from the PC acquisition computer via Presentation software.
+
+Events:
+- Codes: Face_upright=21, Face_inverted=22, Face_upright_shadow=121, Face_inverted_shadow=122, Object_upright=31, Object_inverted=32, Object_upright_shadow=131, Object_inverted_shadow=132
+- Onsets are stimulus onsets derived from the Status channel.
+- See each `*_events.tsv` for per-run details.
+
+Note:
+- Please cite: in preparation
+
+Intersensory Attention (Beepflash_run)
+Cued S1→S2 design indicating whether to attend visual or auditory targets. Primary measures: posterior alpha increases indexing suppression of task-irrelevant sensory input and intersensory attentional gating.
+
+## Audiovisual simple reaction time task (AVSRT_run) 
+
+EEG recorded during an audiovisual simple reaction-time task (AVSRT) in children.
+
+- Participants were seated in a chair in an electrically shielded room (International Acoustics Company, Bronx, New York), 70 cm away from the visual display (Dell UltraSharp 1704FPT). The stimuli, controlled by Presentation software (Neurobehavioral Systems), included three types: a red disc ('Visual'), a 1000Hz tone ('Audio'), and their simultaneous presentation ('Audiovisual'). Participants were instructed to press a button as quickly as possible upon detecting any stimulus. The auditory stimulus was 1000Hz, 60ms tone presented binaurally (75 dB SPL). The visual stimulus was a red disc subtending to 1.5 degrees, displayed above a fixation cross. The audiovisual stimulus was a simultaneous presentation of both. Each trial presented a pseudo randomly chosen stimulus (A, V, or AV; represented equiprobably), with stimuli delivered through headphones (XX) and displayed on a flat-panel LCD (60Hz). A jittered randomly sampled interstimulus interval (1000-3000ms) reduced onset predictability. The task consisted of 400 trials across 4 blocks (100 trials per block), each block lasting approximately 3 minutes and 40 seconds. Button presses were recorded using a response pad (Logitech Wingman Precision Gamepad). Triggers indicating stimulus latency were sent from the PC acquisition computer via Presentation software.
+
+Events:
+- Codes: AV=3, A=4, V=5
+- Onsets are stimulus onsets derived from the Status channel.
+- See each `*_events.tsv` for per-run details.
+
+Note:
+- Please cite: in preparation
+
+
+## Motor Processing (Motor_run) 
+
+EEG recorded during a mobile EEG paradigm in children. This paradigm is recorded using Lab Streaming Layer to synchronize the camera system (for gait measures) with the EEG recordings. 
+
+- Participants are either standing on a treadmill (30 sec recordings) or walking on a treadmill (5 min recordings) with either no flow (static background with white dots) or a flow (dots are moving toward the participant). The task is to ignore the white dots and to respond when the fixation cross at the center of the projected image rotate (45 degrees rotation). 
+
+Events:
+- Codes: 
+- Onsets are stimulus onsets derived from the Status channel.
+- See each `*_events.tsv` for per-run details.
+
+## Rest (Restingstate_run)
+
+EEG recorded during Resting-state (RS) in children.
+
+- Participants were seated in a chair in an electrically shielded room (International Acoustics Company, Bronx, New York), 70 cm away from the visual display (Dell UltraSharp 1704FPT). 1-min eyes-open resting-state was recorded while the participant was just instructed to watch the screen with the eyes-open. A maximum of 6 blocks of 1-min were recorded per participants over the two sessions (two different days) of the SFARI recordings. 
+
+Events:
+- Codes: Start_RS: 50
+- Onsets are stimulus onsets derived from the Status channel.
+- See each `*_events.tsv` for per-run details.
+
+Note:
+- Please cite: in preparation
