@@ -1,0 +1,4 @@
+filename	task	run	session	size_bytes	acq_time	notes
+eeg/sub-1528_task-AVSRT_run-01_eeg.bdf	AVSRT	01	n/a	141075968	n/a	n/a
+eeg/sub-1528_task-Beepflash_run-01_eeg.bdf	Beepflash	01	n/a	17510912	n/a	n/a
+eeg/sub-1528_task-Restingstate_run-01_eeg.bdf	Restingstate	01	n/a	7083008	n/a	n/a
