@@ -39,19 +39,6 @@ EEG recorded during an Auditory Steady-State Response (ASSR) in children.
 Notes:
 - Please cite: <Testing the auditory steady-state response (ASSR) to 40-Hz and 27-Hz click trains in children with autism spectrum disorder and their first-degree biological relatives: A high-density electroencephalographic (EEG) study/https://doi.org/10.1101/2025.08.05.668742>
 
-## Illusory Contours (IC_run)
-
-Kanizsa illusory-contour stimuli versus controls presented during central fixation. 
-
-- Participants were seated in a chair in an electrically shielded room (International Acoustics Company, Bronx, New York), 70 cm away from the visual display (Dell UltraSharp 1704FPT).
-
-Events:
-- 
-- Onsets are stimulus onsets derived from the Status channel.
-- See each `*_events.tsv` for per-run details.
-
-Note:
-- Please cite: in preparation
 
 ## Face Processing (FAST_run)
  
@@ -108,6 +95,20 @@ being a repeat rather than a switch trial was 70%.The auditory S2 stimulus consi
 
 Events:
 -Onsets are stimulus onsets derived from the Status channel.
+- See each `*_events.tsv` for per-run details.
+
+Note:
+- Please cite: in preparation
+
+## Illusory Contours (IC_run)
+
+Kanizsa illusory-contour stimuli versus controls presented during central fixation. 
+
+- Participants were seated in a chair in an electrically shielded room (International Acoustics Company, Bronx, New York), 70 cm away from the visual display (Dell UltraSharp 1704FPT).
+
+Events:
+- 
+- Onsets are stimulus onsets derived from the Status channel.
 - See each `*_events.tsv` for per-run details.
 
 Note:
