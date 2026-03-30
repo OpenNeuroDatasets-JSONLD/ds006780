@@ -2,11 +2,38 @@
   "participant_id": {
     "Description": "Unique participant label (BIDS).",
     "LongName": "Participant identifier",
-    "Levels": {}
+    "Levels": {},
+    "Annotations": {
+      "IsAbout": {
+        "TermURL": "nb:ParticipantID",
+        "Label": "Participant ID"
+      },
+      "VariableType": "Identifier"
+    }
   },
   "age": {
     "Description": "Age in years at time of recording (if available).",
-    "Units": "years"
+    "Units": "years",
+    "Annotations": {
+      "IsAbout": {
+        "TermURL": "nb:Age",
+        "Label": "Age"
+      },
+      "VariableType": "Continuous",
+      "Format": {
+        "TermURL": "nb:FromFloat",
+        "Label": "float"
+      },
+      "MissingValues": [
+        "n/a",
+        "N/A",
+        "na",
+        "NA",
+        "nan",
+        "NaN",
+        ""
+      ]
+    }
   },
   "sex": {
     "Description": "Biological sex as reported.",
@@ -14,6 +41,26 @@
       "m": "male",
       "f": "female",
       "n/a": "not available"
+    },
+    "Annotations": {
+      "IsAbout": {
+        "TermURL": "nb:Sex",
+        "Label": "Sex"
+      },
+      "VariableType": "Categorical",
+      "Levels": {
+        "f": {
+          "TermURL": "snomed:248152002",
+          "Label": "Female"
+        },
+        "m": {
+          "TermURL": "snomed:248153007",
+          "Label": "Male"
+        }
+      },
+      "MissingValues": [
+        "n/a"
+      ]
     }
   },
   "group": {
@@ -88,13 +135,53 @@
     }
   },
   "fsiq": {
-    "Description": "Imported from source participants files (fsiq)."
+    "Description": "Imported from source participants files (fsiq).",
+    "Annotations": {
+      "IsAbout": {
+        "TermURL": "nb:Assessment",
+        "Label": "Assessment Tool"
+      },
+      "VariableType": "Collection",
+      "IsPartOf": {
+        "TermURL": "snomed:621131000124106",
+        "Label": "Wechsler Adult Intelligence Scale fourth edition"
+      },
+      "MissingValues": [
+        "n/a",
+        "N/A",
+        "na",
+        "NA",
+        "nan",
+        "NaN",
+        ""
+      ]
+    }
   },
   "srs2_total_t": {
     "Description": "Imported from source participants files (srs2_total_t)."
   },
   "mabc_total_ss": {
-    "Description": "Imported from source participants files (mabc_total_ss)."
+    "Description": "Imported from source participants files (mabc_total_ss).",
+    "Annotations": {
+      "IsAbout": {
+        "TermURL": "nb:Assessment",
+        "Label": "Assessment Tool"
+      },
+      "VariableType": "Collection",
+      "IsPartOf": {
+        "TermURL": "snomed:725886007",
+        "Label": "Movement Assessment Battery for Children Second Edition"
+      },
+      "MissingValues": [
+        "n/a",
+        "N/A",
+        "na",
+        "NA",
+        "nan",
+        "NaN",
+        ""
+      ]
+    }
   },
   "cpt_response_style": {
     "Description": "Imported from source participants files (cpt_response_style)."
@@ -106,13 +193,53 @@
     "Description": "Imported from source participants files (medication)."
   },
   "fsiq_dup": {
-    "Description": "Imported from source participants files (fsiq_dup)."
+    "Description": "Imported from source participants files (fsiq_dup).",
+    "Annotations": {
+      "IsAbout": {
+        "TermURL": "nb:Assessment",
+        "Label": "Assessment Tool"
+      },
+      "VariableType": "Collection",
+      "IsPartOf": {
+        "TermURL": "snomed:621131000124106",
+        "Label": "Wechsler Adult Intelligence Scale fourth edition"
+      },
+      "MissingValues": [
+        "n/a",
+        "N/A",
+        "na",
+        "NA",
+        "nan",
+        "NaN",
+        ""
+      ]
+    }
   },
   "srs2_total_t_dup": {
     "Description": "Imported from source participants files (srs2_total_t_dup)."
   },
   "mabc_total_ss_dup": {
-    "Description": "Imported from source participants files (mabc_total_ss_dup)."
+    "Description": "Imported from source participants files (mabc_total_ss_dup).",
+    "Annotations": {
+      "IsAbout": {
+        "TermURL": "nb:Assessment",
+        "Label": "Assessment Tool"
+      },
+      "VariableType": "Collection",
+      "IsPartOf": {
+        "TermURL": "snomed:725886007",
+        "Label": "Movement Assessment Battery for Children Second Edition"
+      },
+      "MissingValues": [
+        "n/a",
+        "N/A",
+        "na",
+        "NA",
+        "nan",
+        "NaN",
+        ""
+      ]
+    }
   },
   "cpt_response_style_dup": {
     "Description": "Imported from source participants files (cpt_response_style_dup)."
